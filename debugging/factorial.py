@@ -4,7 +4,7 @@ import sys
 def factorial(n):
     result = 1
     while n > 1:
-        result *= ni
+        result *= n
         n -= 1
     return result
 
@@ -18,7 +18,7 @@ if __name__ == "__main__":
             if num < 0:
                 raise ValueError("Number must be non-negative.")
             except ValueError, e:
-                print(F"Error: {e}")
+                print(f"Error: {e}")
                 sys.exit(1)
 
 f = factorial(int(sys.argv[1]))
