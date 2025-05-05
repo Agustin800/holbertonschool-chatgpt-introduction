@@ -17,7 +17,7 @@ if __name__ == "__main__":
             num = int(sys.argv[1])
             if num < 0:
                 raise ValueError("Number must be non-negative.")
-            except ValueError as e:
+            except ValueError, e:
                 print(F"Error: {e}")
                 sys.exit(1)
 
