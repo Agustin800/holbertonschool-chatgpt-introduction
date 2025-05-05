@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 import sys
 
 def factorial(n):
@@ -10,15 +10,15 @@ def factorial(n):
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
-        print("Usage: ./factorial.py <number>")
+        print Usage: ./factorial.py <number>
         sys.exit(1)
 
         try:
             num = int(sys.argv[1])
             if num < 0:
                 raise ValueError("Number must be non-negative.")
-            except ValueError, e:
-                print(f"Error: {e}")
+            except ValueError as e:
+                print "Error: {}".fotmat(e)
                 sys.exit(1)
 
 f = factorial(int(sys.argv[1]))
