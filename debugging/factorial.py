@@ -18,8 +18,8 @@ if __name__ == "__main__":
         if num < 0:
             raise ValueError("Number must be non-negative.")
     except ValueError as e:
-        print "Error: {}".format(e)
+        print ("Error: {}".format(e))
         sys.exit(1)
 
 f = factorial(num)
-print f
+print (f)
